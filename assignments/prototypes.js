@@ -31,7 +31,7 @@ GameObject.prototype.destroy = function () {
   * should inherit destroy() from GameObject's prototype
 */
 function CharacterStats (stats) {
-  GameObject.call(this.stats);
+  GameObject.call(this, stats);
   this.healthPoints = stats.healthPoints;
 }
 
